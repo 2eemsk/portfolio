@@ -31,19 +31,19 @@ public class Portal : MonoBehaviour
             switch (this.gameObject.name)
             {
                 case "up":
-                    _player.transform.position = new Vector3(nextPortal.transform.position.x, 0, nextPortal.transform.position.z + moveInterval);
+                    _player.transform.position = new Vector3(nextPortal.transform.position.x, nextPortal.transform.position.y, nextPortal.transform.position.z + moveInterval);
                     MapGenerator.OnOffPortal(MapGenerator.portalList);
                     break;
                 case "down":
-                    _player.transform.position = new Vector3(nextPortal.transform.position.x, 0, nextPortal.transform.position.z - moveInterval);
+                    _player.transform.position = new Vector3(nextPortal.transform.position.x, nextPortal.transform.position.y, nextPortal.transform.position.z - moveInterval);
                     MapGenerator.OnOffPortal(MapGenerator.portalList);
                     break;
                 case "right":
-                    _player.transform.position = new Vector3(nextPortal.transform.position.x+ moveInterval, 0, nextPortal.transform.position.z);
+                    _player.transform.position = new Vector3(nextPortal.transform.position.x+ moveInterval, nextPortal.transform.position.y, nextPortal.transform.position.z);
                     MapGenerator.OnOffPortal(MapGenerator.portalList);
                     break;
                 case "left":
-                    _player.transform.position = new Vector3(nextPortal.transform.position.x - moveInterval, 0, nextPortal.transform.position.z);
+                    _player.transform.position = new Vector3(nextPortal.transform.position.x - moveInterval, nextPortal.transform.position.y, nextPortal.transform.position.z);
                     MapGenerator.OnOffPortal(MapGenerator.portalList);
                     break;
 
