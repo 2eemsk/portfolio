@@ -1,2 +1,2 @@
-# portfolio
-space for my portfolio, for my career
+이민석의 개발 포트폴리오입니다.
+각 프로젝트 폴더별로 구분해 놓았습니다. 감사합니다.
